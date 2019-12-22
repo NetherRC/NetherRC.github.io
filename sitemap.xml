@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://hatate.tk/tags/index.html</loc>
+    
+    <lastmod>2019-12-22T14:26:01.466Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://hatate.tk/about/index.html</loc>
     
     <lastmod>2019-12-19T14:05:06.261Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://hatate.tk/problemset/P1001/index.html</loc>
     
     <lastmod>2019-12-01T09:37:11.498Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hatate.tk/tags/index.html</loc>
-    
-    <lastmod>2019-11-30T15:30:04.599Z</lastmod>
     
   </url>
   
