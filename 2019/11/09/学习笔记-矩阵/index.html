@@ -2286,6 +2286,28 @@ Hitokoto
 </div>
         </div>
       </div>
+
+<script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+<div class="widget-wrap" style="font-size: 0.8125em;padding:3px 0 0;">
+<script type="text/javascript"> 
+$(document).ready(function(){
+  $(".widget-title").click(function(){
+    $(".widget-tagcloud").slideToggle("slow");
+  });
+});
+</script>
+    <div class="widget-title" style="font-size: 0.875em;font-weight: 600;margin-top: 0;text-align: center;">
+<i class="fa fa-fw fa-cloud"></i>
+Tag Cloud
+</div>
+    <div id="myCanvasContainer" class="widget-tagcloud" style="display:none;">
+        <canvas width="200" height="200" id="resCanvas" style="width=100%">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Centroid/">Centroid</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Combinatorics/">Combinatorics</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Convex-Hull/">Convex Hull</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FFT/">FFT</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Heuristic-Algorithm/">Heuristic Algorithm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Matching/">Matching</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Matrix/">Matrix</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Number-Theoretic-Function/">Number-Theoretic Function</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Offline-Algorithm/">Offline Algorithm</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Partition/">Partition</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sieve/">Sieve</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spanning-Tree/">Spanning Tree</a><span class="tag-list-count">1</span></li></ul>
+        </canvas>
+    </div>
+</div>
+
       <!--noindex-->
         <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
