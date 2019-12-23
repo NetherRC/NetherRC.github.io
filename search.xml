@@ -47,8 +47,8 @@
         <category>Polynomial</category>
       </categories>
       <tags>
-        <tag>FFT</tag>
         <tag>Partition</tag>
+        <tag>FFT</tag>
       </tags>
   </entry>
   <entry>
@@ -82,8 +82,8 @@
         <category>Algorithm</category>
       </categories>
       <tags>
-        <tag>Offline Algorithm</tag>
         <tag>Partition</tag>
+        <tag>Offline Algorithm</tag>
       </tags>
   </entry>
   <entry>
@@ -118,8 +118,8 @@
         <category>Tree</category>
       </categories>
       <tags>
-        <tag>Heuristic Algorithm</tag>
         <tag>Offline Algorithm</tag>
+        <tag>Heuristic Algorithm</tag>
       </tags>
   </entry>
   <entry>
