@@ -338,6 +338,10 @@
               
               
                 
+              
+                
+              
+                
                   
                 
               
@@ -375,10 +379,6 @@
               
                 
                   
-                
-              
-                
-              
                 
               
               目前共计 10 个分类
@@ -596,7 +596,9 @@ $(document).ready(function(){
 <script type="text/javascript"> 
 $(document).ready(function(){
   $(".hitokoto-title").click(function(){
+    $(".links-of-blogroll-list").slideUp("slow");
     $(".hitokoto-inner").slideToggle("slow");
+    $(".widget-tagcloud").slideUp("slow");
   });
 });
 </script>
@@ -619,6 +621,8 @@ Hitokoto
 <script type="text/javascript"> 
 $(document).ready(function(){
   $(".widget-title").click(function(){
+    $(".links-of-blogroll-list").slideUp("slow");
+    $(".hitokoto-inner").slideUp("slow");
     $(".widget-tagcloud").slideToggle("slow");
   });
 });
