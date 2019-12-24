@@ -94,8 +94,8 @@
         <category>Algorithm</category>
       </categories>
       <tags>
-        <tag>Offline Algorithm</tag>
         <tag>Partition</tag>
+        <tag>Offline Algorithm</tag>
       </tags>
   </entry>
   <entry>
@@ -130,8 +130,8 @@
         <category>Tree</category>
       </categories>
       <tags>
-        <tag>Heuristic Algorithm</tag>
         <tag>Offline Algorithm</tag>
+        <tag>Heuristic Algorithm</tag>
       </tags>
   </entry>
   <entry>
@@ -144,7 +144,7 @@
       </categories>
       <tags>
         <tag>Sieve</tag>
-        <tag>Number-Theoretic Function</tag>
+        <tag>Multiplicative Function</tag>
       </tags>
   </entry>
   <entry>
