@@ -69,18 +69,18 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
-  <meta name="description" content="CDQ 分治">
+  <meta name="description" content="CDQ 分治CDQ 分治说是算法，实际上是一种思想因此 CDQ 分治涵盖的范围非常广大概可以分为以下三类CDQ 分治解决和点对有关的问题对于一个长度为  n         的序列，求满足一种性质的点对  (i, j)                     数量，或求一个函数  f(i, j)                        的最值">
 <meta name="keywords" content="Partition,Offline Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习笔记-CDQ 分治">
 <meta property="og:url" content="https://hatate.tk/2019/11/11/学习笔记-CDQ 分治/index.html">
 <meta property="og:site_name" content="HatateのBlog">
-<meta property="og:description" content="CDQ 分治">
+<meta property="og:description" content="CDQ 分治CDQ 分治说是算法，实际上是一种思想因此 CDQ 分治涵盖的范围非常广大概可以分为以下三类CDQ 分治解决和点对有关的问题对于一个长度为  n         的序列，求满足一种性质的点对  (i, j)                     数量，或求一个函数  f(i, j)                        的最值">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-12-17T12:19:18.482Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记-CDQ 分治">
-<meta name="twitter:description" content="CDQ 分治">
+<meta name="twitter:description" content="CDQ 分治CDQ 分治说是算法，实际上是一种思想因此 CDQ 分治涵盖的范围非常广大概可以分为以下三类CDQ 分治解决和点对有关的问题对于一个长度为  n         的序列，求满足一种性质的点对  (i, j)                     数量，或求一个函数  f(i, j)                        的最值">
   <link rel="canonical" href="https://hatate.tk/2019/11/11/学习笔记-CDQ 分治/">
 
 
@@ -386,22 +386,16 @@
         </div>
       </header>
 
-    
-    
-    
-
-
 <script type="text/javascript" src="https://pic.hatate.tk/api/random.js"></script>
+
+    
+    
+    
 
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="CDQ-分治"><a href="#CDQ-分治" class="headerlink" title="CDQ 分治"></a>CDQ 分治</h2><a id="more"></a>
-<p>CDQ 分治说是算法，实际上是一种思想</p>
-<p>因此 CDQ 分治涵盖的范围非常广</p>
-<p>大概可以分为以下三类</p>
-<h3 id="CDQ-分治解决和点对有关的问题"><a href="#CDQ-分治解决和点对有关的问题" class="headerlink" title="CDQ 分治解决和点对有关的问题"></a>CDQ 分治解决和点对有关的问题</h3>
-<p>对于一个长度为 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex" style="vertical-align: -0.338ex;" viewbox="0 -576.1 600.5 721.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
+        <h2 id="CDQ-分治"><a href="#CDQ-分治" class="headerlink" title="CDQ 分治"></a>CDQ 分治</h2><p>CDQ 分治说是算法，实际上是一种思想</p><p>因此 CDQ 分治涵盖的范围非常广</p><p>大概可以分为以下三类</p><h3 id="CDQ-分治解决和点对有关的问题"><a href="#CDQ-分治解决和点对有关的问题" class="headerlink" title="CDQ 分治解决和点对有关的问题"></a>CDQ 分治解决和点对有关的问题</h3><p>对于一个长度为 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex" style="vertical-align: -0.338ex;" viewbox="0 -576.1 600.5 721.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
 <title id="MathJax-SVG-2-Title">n</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E2-MJMATHI-6E" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"/>
@@ -443,7 +437,12 @@
  <use xlink:href="#E4-MJMATHI-6A" x="1730" y="0"/>
  <use xlink:href="#E4-MJMAIN-29" x="2143" y="0"/>
 </g>
-</svg></span> 的最值</p>
+</svg></span> 的最值</p><a id="more"></a>
+
+
+
+
+
 <p>CDQ 分治的算法流程是这样的</p>
 <p>对于序列 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="4.585ex" height="2.843ex" style="vertical-align: -0.838ex;" viewbox="0 -863.1 1974.2 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-5-Title">
 <title id="MathJax-SVG-5-Title">(l, r)</title>
