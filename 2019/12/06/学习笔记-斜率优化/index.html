@@ -69,18 +69,18 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
-  <meta name="description" content="斜率优化我们先来看一个问题将  a_{1 \ldots n}                    划分成若干段，每段的费用为这段数字和的平方再加上 M        求费用和的最小值，  1 \leq n \leq 5 \times {10}^5">
+  <meta name="description" content="斜率优化">
 <meta name="keywords" content="Convex Hull">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习笔记-斜率优化">
 <meta property="og:url" content="https://hatate.tk/2019/12/06/学习笔记-斜率优化/index.html">
 <meta property="og:site_name" content="HatateのBlog">
-<meta property="og:description" content="斜率优化我们先来看一个问题将  a_{1 \ldots n}                    划分成若干段，每段的费用为这段数字和的平方再加上 M        求费用和的最小值，  1 \leq n \leq 5 \times {10}^5">
+<meta property="og:description" content="斜率优化">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-12-17T12:09:28.320Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记-斜率优化">
-<meta name="twitter:description" content="斜率优化我们先来看一个问题将  a_{1 \ldots n}                    划分成若干段，每段的费用为这段数字和的平方再加上 M        求费用和的最小值，  1 \leq n \leq 5 \times {10}^5">
+<meta name="twitter:description" content="斜率优化">
   <link rel="canonical" href="https://hatate.tk/2019/12/06/学习笔记-斜率优化/">
 
 
@@ -396,7 +396,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="斜率优化"><a href="#斜率优化" class="headerlink" title="斜率优化"></a>斜率优化</h2><p>我们先来看一个问题</p><p>将 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.196ex" height="2.009ex" style="vertical-align: -0.671ex;" viewbox="0 -576.1 2237.1 865.1" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
+        <h2 id="斜率优化"><a href="#斜率优化" class="headerlink" title="斜率优化"></a>斜率优化</h2><a id="more"></a>
+<p>我们先来看一个问题</p>
+<p>将 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.196ex" height="2.009ex" style="vertical-align: -0.671ex;" viewbox="0 -576.1 2237.1 865.1" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
 <title id="MathJax-SVG-2-Title">a_{1 \ldots n}</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E2-MJMATHI-61" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"/>
@@ -420,7 +422,8 @@
 <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
  <use xlink:href="#E3-MJMATHI-4D" x="0" y="0"/>
 </g>
-</svg></span></p><p>求费用和的最小值， <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16.136ex" height="2.843ex" style="vertical-align: -0.505ex;" viewbox="0 -1006.6 6947.5 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-4-Title">
+</svg></span></p>
+<p>求费用和的最小值， <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16.136ex" height="2.843ex" style="vertical-align: -0.505ex;" viewbox="0 -1006.6 6947.5 1223.9" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-4-Title">
 <title id="MathJax-SVG-4-Title">1 \leq n \leq 5 \times {10}^5</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E4-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"/>
@@ -443,10 +446,7 @@
  <use transform="scale(0.707)" xlink:href="#E4-MJMAIN-35" x="1415" y="557"/>
 </g>
 </g>
-</svg></span></p><a id="more"></a>
-
-
-
+</svg></span></p>
 <p>记 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.939ex" height="2.509ex" style="vertical-align: -0.671ex;" viewbox="0 -791.3 834.8 1080.4" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-5-Title">
 <title id="MathJax-SVG-5-Title"> f_i </title>
 <defs aria-hidden="true">

@@ -69,18 +69,18 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
-  <meta name="description" content="DSU on treeDSU on tree 又名树上启发式合并是一种非常优雅的暴力它是用来解决一类树上询问问题，一般这种问题有两个特征  只有对子树的询问   没有修改  举个例子给定一棵树，每个节点有一个颜色，求每个节点子树的颜色种类数">
+  <meta name="description" content="DSU on tree">
 <meta name="keywords" content="Offline Algorithm,Heuristic Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习笔记-DSU on tree">
 <meta property="og:url" content="https://hatate.tk/2019/10/29/学习笔记-DSU on tree/index.html">
 <meta property="og:site_name" content="HatateのBlog">
-<meta property="og:description" content="DSU on treeDSU on tree 又名树上启发式合并是一种非常优雅的暴力它是用来解决一类树上询问问题，一般这种问题有两个特征  只有对子树的询问   没有修改  举个例子给定一棵树，每个节点有一个颜色，求每个节点子树的颜色种类数">
+<meta property="og:description" content="DSU on tree">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-11-12T00:16:57.002Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记-DSU on tree">
-<meta name="twitter:description" content="DSU on treeDSU on tree 又名树上启发式合并是一种非常优雅的暴力它是用来解决一类树上询问问题，一般这种问题有两个特征  只有对子树的询问   没有修改  举个例子给定一棵树，每个节点有一个颜色，求每个节点子树的颜色种类数">
+<meta name="twitter:description" content="DSU on tree">
   <link rel="canonical" href="https://hatate.tk/2019/10/29/学习笔记-DSU on tree/">
 
 
@@ -403,20 +403,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="DSU-on-tree"><a href="#DSU-on-tree" class="headerlink" title="DSU on tree"></a>DSU on tree</h2><p>DSU on tree 又名树上启发式合并</p><p>是一种非常优雅的暴力</p><p>它是用来解决一类树上询问问题，一般这种问题有两个特征</p><ol>
+        <h2 id="DSU-on-tree"><a href="#DSU-on-tree" class="headerlink" title="DSU on tree"></a>DSU on tree</h2><a id="more"></a>
+<p>DSU on tree 又名树上启发式合并</p>
+<p>是一种非常优雅的暴力</p>
+<p>它是用来解决一类树上询问问题，一般这种问题有两个特征</p>
+<ol>
 <li>
 <p>只有对子树的询问</p>
 </li>
 <li>
 <p>没有修改</p>
 </li>
-</ol><p>举个例子</p><p>给定一棵树，每个节点有一个颜色，求每个节点子树的颜色种类数</p><a id="more"></a>
-
-
-
-
-
-
+</ol>
+<p>举个例子</p>
+<p>给定一棵树，每个节点有一个颜色，求每个节点子树的颜色种类数</p>
 <p>直接暴力是 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.032ex" height="3.009ex" style="vertical-align: -0.838ex;" viewbox="0 -934.9 2596.9 1295.7" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
 <title id="MathJax-SVG-2-Title"> O(n^2) </title>
 <defs aria-hidden="true">

@@ -69,18 +69,18 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
-  <meta name="description" content="第二类 Stirling 数第二类 Stirling 数  \left\{ \begin{matrix} n\\k \end{matrix} \right\}                        ，又称 Stirling 子集数，表示把大小为  n         的集合划分为  k         非空个子集的方案数">
+  <meta name="description" content="第二类 Stirling 数">
 <meta name="keywords" content="Combinatorics">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习笔记-Stirling 数">
 <meta property="og:url" content="https://hatate.tk/2019/11/12/学习笔记-Stirling 数/index.html">
 <meta property="og:site_name" content="HatateのBlog">
-<meta property="og:description" content="第二类 Stirling 数第二类 Stirling 数  \left\{ \begin{matrix} n\\k \end{matrix} \right\}                        ，又称 Stirling 子集数，表示把大小为  n         的集合划分为  k         非空个子集的方案数">
+<meta property="og:description" content="第二类 Stirling 数">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-12-17T12:15:40.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记-Stirling 数">
-<meta name="twitter:description" content="第二类 Stirling 数第二类 Stirling 数  \left\{ \begin{matrix} n\\k \end{matrix} \right\}                        ，又称 Stirling 子集数，表示把大小为  n         的集合划分为  k         非空个子集的方案数">
+<meta name="twitter:description" content="第二类 Stirling 数">
   <link rel="canonical" href="https://hatate.tk/2019/11/12/学习笔记-Stirling 数/">
 
 
@@ -403,7 +403,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="第二类-Stirling-数"><a href="#第二类-Stirling-数" class="headerlink" title="第二类 Stirling 数"></a>第二类 Stirling 数</h2><p>第二类 Stirling 数 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.632ex" height="6.176ex" style="vertical-align: -2.505ex;" viewbox="0 -1580.7 2425 2659.1" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
+        <h2 id="第二类-Stirling-数"><a href="#第二类-Stirling-数" class="headerlink" title="第二类 Stirling 数"></a>第二类 Stirling 数</h2><a id="more"></a>
+<p>第二类 Stirling 数 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.632ex" height="6.176ex" style="vertical-align: -2.505ex;" viewbox="0 -1580.7 2425 2659.1" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
 <title id="MathJax-SVG-2-Title">\left\{ \begin{matrix} n\\k \end{matrix} \right\}</title>
 <defs aria-hidden="true">
 <path stroke-width="1" id="E2-MJMAIN-7B" d="M434 -231Q434 -244 428 -250H410Q281 -250 230 -184Q225 -177 222 -172T217 -161T213 -148T211 -133T210 -111T209 -84T209 -47T209 0Q209 21 209 53Q208 142 204 153Q203 154 203 155Q189 191 153 211T82 231Q71 231 68 234T65 250T68 266T82 269Q116 269 152 289T203 345Q208 356 208 377T209 529V579Q209 634 215 656T244 698Q270 724 324 740Q361 748 377 749Q379 749 390 749T408 750H428Q434 744 434 732Q434 719 431 716Q429 713 415 713Q362 710 332 689T296 647Q291 634 291 499V417Q291 370 288 353T271 314Q240 271 184 255L170 250L184 245Q202 239 220 230T262 196T290 137Q291 131 291 1Q291 -134 296 -147Q306 -174 339 -192T415 -213Q429 -213 431 -216Q434 -219 434 -231Z"/>
@@ -439,8 +440,7 @@
 <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
  <use xlink:href="#E4-MJMATHI-6B" x="0" y="0"/>
 </g>
-</svg></span> 非空个子集的方案数</p><a id="more"></a>
-
+</svg></span> 非空个子集的方案数</p>
 <p>第二类 Stirling 数有一个递推式</p>
 <p style="text-align: center; "><span class="mjpage mjpage__block"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="32.44ex" height="6.176ex" style="vertical-align: -2.505ex;" viewbox="0 -1580.7 13967.2 2659.1" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-5-Title">
 <title id="MathJax-SVG-5-Title">\left\{ \begin{matrix} n\\k \end{matrix} \right\} = k \left\{ \begin{matrix} n - 1\\k \end{matrix} \right\} + \left\{ \begin{matrix} n - 1\\k - 1 \end{matrix} \right\}
